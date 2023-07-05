@@ -1,4 +1,4 @@
-# monolith-sample
+# modulith-sample
 
 
 DepartmentController uses employeeRepository.
