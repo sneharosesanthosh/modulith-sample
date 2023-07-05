@@ -1,6 +1,5 @@
 package com.sneha.monolith.employee;
 
-import com.sneha.monolith.employee.EmployeeRepository;
 import com.sneha.monolith.employee.internal.Employee;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
