@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DepartmentController {
 
-    private final DepartmentRepository departmentRepository;
+    private final Department.DepartmentRepository departmentRepository;
     private final EmployeeController employeeRepository;
 
     @PostMapping
