@@ -15,7 +15,7 @@ import java.util.List;
 public class DepartmentController {
 
     private final DepartmentRepository departmentRepository;
-    private final EmployeeController employeeRepository;
+    private final EmployeeController employeeController;
 
     @PostMapping
     public Department addDepartment(@RequestBody Department department) {
@@ -40,7 +40,7 @@ public class DepartmentController {
         log.info("Inside findAllWithEmployees---->");
         List<Department> departments = departmentRepository.findAll();
         departments.forEach(department -> {
-            department.setEmployees(employeeRepository.getEmployeesByDepartment(department.getId()));
+            department.setEmployees(employeeController.getEmployeesByDepartment(department.getId()));
         });
         return departments;
     }
